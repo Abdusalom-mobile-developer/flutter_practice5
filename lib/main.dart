@@ -40,8 +40,8 @@ class _NewAppState extends State<NewApp> {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("Practice"),
-          bottom: TabBar(tabs: [
+          title: const Text("Practice"),
+          bottom: const TabBar(tabs: [
             Tab(
               text: "First",
               icon: Icon(Icons.first_page),
@@ -59,14 +59,14 @@ class _NewAppState extends State<NewApp> {
         body: TabBarView(children: [
           Container(
             color: Colors.black,
-            child: Center(
+            child: const Center(
               child: Text("First Page",
                   style: TextStyle(color: Colors.white, fontSize: 25)),
             ),
           ),
           Container(
             color: Colors.yellow,
-            child: Center(
+            child: const Center(
               child: Text(
                 "Second Page",
                 style: TextStyle(color: Colors.black, fontSize: 25),
@@ -75,7 +75,7 @@ class _NewAppState extends State<NewApp> {
           ),
           Container(
             color: Colors.green,
-            child: Center(
+            child: const Center(
               child: Text("Third Page",
                   style: TextStyle(color: Colors.white, fontSize: 25)),
             ),
